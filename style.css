@@ -811,102 +811,69 @@ section:not(.hero) {
   margin: 0 auto;
 }
 
-.phone-frame {
-  background: var(--color-surface);
-  border: 2px solid var(--color-border);
-  border-radius: 36px;
-  padding: var(--space-4);
-  box-shadow: 0 24px 48px rgba(0,0,0,0.4);
-}
-
-.phone-screen {
-  background: var(--color-surface-2);
-  border-radius: 24px;
-  padding: var(--space-6);
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: var(--space-4);
-}
-
-.phone-screen__logo {
-  width: 48px;
-  height: 48px;
-  background: var(--color-primary);
-  border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: var(--text-lg);
-}
-
-.phone-screen__title {
-  font-family: var(--font-display);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.phone-screen__score {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 700;
-  color: var(--color-sand);
-}
-
-.phone-screen__label {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.phone-screen__bars {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-
-.phone-bar {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-}
-
-.phone-bar__fill {
-  height: 6px;
-  border-radius: var(--radius-full);
-  flex: 1;
-  background: var(--color-border);
+/* iPhone Frame — realistic device mockup */
+.iphone-frame {
   position: relative;
-  overflow: hidden;
+  background: #1a1a1a;
+  border: 3px solid #333;
+  border-radius: 44px;
+  padding: 12px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 24px 64px rgba(0,0,0,0.5),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-.phone-bar__fill::after {
+.iphone-frame__notch {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 24px;
+  background: #1a1a1a;
+  border-radius: 0 0 16px 16px;
+  z-index: 2;
+}
+
+.iphone-frame__notch::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: var(--radius-full);
-  background: var(--color-primary);
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #2a2a2a;
+  border-radius: 50%;
 }
 
-.phone-bar--1 .phone-bar__fill::after { width: 92%; }
-.phone-bar--2 .phone-bar__fill::after { width: 85%; }
-.phone-bar--3 .phone-bar__fill::after { width: 78%; }
-.phone-bar--4 .phone-bar__fill::after { width: 88%; }
+.iphone-frame__screen {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  background: #000;
+}
+
+.iphone-frame__screen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.iphone-frame__bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: rgba(255,255,255,0.25);
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
 
 @media (max-width: 768px) {
   .pitchsafe__inner {
