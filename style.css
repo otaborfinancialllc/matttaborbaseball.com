@@ -311,6 +311,12 @@ section:not(.hero) {
   );
 }
 
+@media (max-width: 768px) {
+  .hero__bg {
+    position: absolute;
+  }
+}
+
 .hero__content {
   position: relative;
   z-index: 1;
