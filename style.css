@@ -591,8 +591,11 @@ section:not(.hero) {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--space-3);
   margin-top: var(--space-6);
+  max-width: 480px;
+  margin-inline: auto;
 }
 
 .credentials__list li {
