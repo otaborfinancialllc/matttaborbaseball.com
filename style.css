@@ -1371,7 +1371,7 @@ section:not(.hero) {
 /* ===== HERO QUOTE VARIANT ===== */
 .hero__subtitle--quote {
   font-style: italic;
-  font-weight: 700;
+  font-weight: normal;
   font-size: var(--text-base);
   color: #ffffff;
   max-width: 680px;
