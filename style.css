@@ -1373,7 +1373,7 @@ section:not(.hero) {
   font-style: italic;
   font-weight: 700;
   font-size: var(--text-base);
-  color: var(--color-text-muted);
+  color: #ffffff;
   max-width: 680px;
   line-height: 1.8;
 }
