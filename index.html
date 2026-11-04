@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matt Tabor Baseball | Return From Injury or Increase Velocity</title>
-<meta name="description" content="Remote pitching coaching from the 82nd pick in the 2017 MLB Draft. Return from Tommy John or shoulder surgery, or increase your velocity, over FaceTime from wherever you throw.">
+<title>Remote Pitching Coach for Velocity &amp; Injury Return | Matt Tabor</title>
+<meta name="description" content="Remote pitching coach and 82nd pick in the 2017 MLB Draft. Increase velocity or return from Tommy John or shoulder surgery, over FaceTime from anywhere.">
 <link rel="canonical" href="https://matttaborbaseball.com/">
 <meta name="theme-color" content="#0a0a0a">
 
@@ -22,15 +22,71 @@
 <link rel="stylesheet" href="./site.css">
 <link rel="stylesheet" href="./base.css">
 
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SportsOrganization",
-  "name": "Matt Tabor Baseball",
-  "description": "Remote pitching coaching for return from injury and velocity development",
-  "sport": "Baseball",
-  "url": "https://matttaborbaseball.com/",
-  "founder": { "@type": "Person", "name": "Matt Tabor", "jobTitle": "Pitching Coach" }
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SportsOrganization",
+   "@id": "https://matttaborbaseball.com/#org",
+   "name": "Matt Tabor Baseball",
+   "sport": "Baseball",
+   "url": "https://matttaborbaseball.com/",
+   "logo": "https://matttaborbaseball.com/apple-touch-icon.png",
+   "founder": {
+    "@id": "https://matttaborbaseball.com/#matt"
+   },
+   "telephone": "+1-978-846-5937",
+   "email": "matt@pitchsafe.co",
+   "sameAs": [
+    "https://www.instagram.com/matttaborbaseball/"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://matttaborbaseball.com/#matt",
+   "name": "Matt Tabor",
+   "jobTitle": "Pitching Coach",
+   "url": "https://matttaborbaseball.com/",
+   "image": "https://matttaborbaseball.com/assets/velocity-hero.jpg",
+   "description": "Former professional pitcher, drafted 82nd overall in 2017 by the Arizona Diamondbacks, who came back from Tommy John and thoracic outlet surgery.",
+   "sameAs": [
+    "https://en.wikipedia.org/wiki/Matt_Tabor",
+    "https://www.instagram.com/matttaborbaseball/"
+   ]
+  },
+  {
+   "@type": "Service",
+   "name": "Online Pitching Velocity Program",
+   "description": "Remote velocity programming for pitchers, with a daily plan in PitchSafe and work reviewed over FaceTime.",
+   "url": "https://matttaborbaseball.com/velocity",
+   "serviceType": "Pitching coaching",
+   "provider": {
+    "@id": "https://matttaborbaseball.com/#org"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  },
+  {
+   "@type": "Service",
+   "name": "Return to Throwing Coaching After Tommy John or Shoulder Surgery",
+   "description": "Remote return-to-throw pitching programming that works alongside the athlete's surgeon and physical therapist.",
+   "url": "https://matttaborbaseball.com/returnfrominjury",
+   "serviceType": "Pitching coaching",
+   "provider": {
+    "@id": "https://matttaborbaseball.com/#org"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+   }
+  }
+ ]
 }
 </script>
 </head>
@@ -51,14 +107,14 @@
 
   <section class="fork" aria-label="Choose your road">
     <a class="fork__p fork__p--inj" href="./returnfrominjury">
-      <img src="./assets/injury-home.jpg" alt="Matt Tabor training in the gym, holding a barbell on a raised platform" width="804" height="670">
+      <img fetchpriority="high" src="./assets/injury-home.jpg" alt="Matt Tabor training in the gym, holding a barbell on a raised platform" width="804" height="670">
       <span class="fork__kick">Tommy John &middot; Shoulder</span>
       <span class="fork__t">Return from injury</span>
       <span class="fork__d">I've come back from two arm surgeries. You won't go through yours alone.</span>
       <span class="fork__go">See how it works &rarr;</span>
     </a>
     <a class="fork__p fork__p--vel" href="./velocity">
-      <img src="./assets/velocity-hero.jpg" alt="Matt Tabor pitching for the Amarillo Sod Poodles" width="1800" height="1200">
+      <img fetchpriority="high" src="./assets/velocity-hero.jpg" alt="Matt Tabor pitching for the Amarillo Sod Poodles" width="1800" height="1200">
       <span class="fork__kick">Youth &middot; High School &middot; College</span>
       <span class="fork__t">Increase velocity</span>
       <span class="fork__d">A real plan for every day, and a former pro on the call for your work.</span>
@@ -69,7 +125,7 @@
 
   <div class="wrap gotyou">
     <p class="gotyou__t">I got you.</p>
-    <p class="gotyou__d">Remote coaching from the 82nd pick in the 2017 draft. It all happens over FaceTime, from wherever you throw.</p>
+    <p class="gotyou__d">Remote pitching coach and the 82nd pick in the 2017 draft. It all happens over FaceTime, from wherever you throw.</p>
     <a class="btn btn--red" href="sms:+19788465937">Text Matt</a>
   </div>
 
