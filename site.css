@@ -192,6 +192,15 @@ a { color: inherit; }
 .qa .faq { margin-top: 0; }
 .cross--vel { border-left-color: var(--color-primary-hover); }
 
+/* Articles index */
+.alist { list-style: none; margin-top: var(--space-8); border-top: 1px solid var(--color-border); }
+.alist li { max-width: none; border-bottom: 1px solid var(--color-divider); }
+.alist a { display: grid; grid-template-columns: 140px 1fr; gap: var(--space-6); align-items: center; padding-block: var(--space-6); text-decoration: none; }
+.alist img { width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: 50% 62%; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+.alist h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg); line-height: 1.15; margin-block: var(--space-2); }
+.alist a:hover h2 { color: var(--color-sand); }
+.alist p { color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.5; }
+
 /* Footer */
 .foot { border-top: 1px solid var(--color-divider); padding-block: var(--space-8) var(--space-10); }
 .foot__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted); }
@@ -241,4 +250,18 @@ a { color: inherit; }
   .tl--case li { grid-template-columns: 5.75rem 1fr; gap: var(--space-3); }
   .cross .btn { width: 100%; }
   body { padding-bottom: 72px; }
+}
+@media (max-width: 760px) {
+  .alist a { grid-template-columns: 96px 1fr; gap: var(--space-4); }
+}
+/* Four header items have to fit a small phone. */
+@media (max-width: 400px) {
+  .top__in { gap: var(--space-3); }
+  .top a.top__link { font-size: .8125rem; }
+  .top__cta { padding: .5rem .75rem; font-size: .8125rem; }
+  .top__brand img { width: 26px; }
+}
+/* Homepage has one more header link; drop it before the row runs out of room on tablets. */
+@media (max-width: 900px) {
+  .top a.top__link.top__long { display: none; }
 }
