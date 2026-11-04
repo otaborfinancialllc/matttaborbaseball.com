@@ -203,6 +203,7 @@ a { color: inherit; }
 
 /* Footer */
 .foot { border-top: 1px solid var(--color-divider); padding-block: var(--space-8) var(--space-10); }
+.foot__note { margin-bottom: var(--space-5); max-width: none; color: var(--color-text-faint); font-size: var(--text-xs); line-height: 1.5; }
 .foot__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted); }
 .foot nav { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5); }
 .foot a { text-decoration: none; }
